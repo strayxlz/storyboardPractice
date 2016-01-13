@@ -97,9 +97,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"AddPlayer"]) {
-        
-        NSLog(@"你会打印吗？倚思倚思想你了");
-        
+                
         UINavigationController *navigationController = segue.destinationViewController;
         PlayerDetailsViewController *playerDetailsViewController = [[navigationController viewControllers] objectAtIndex:0];
         playerDetailsViewController.delegate = self;

@@ -67,9 +67,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:@"PickGame"]) {
-        
-        NSLog(@"快打印出来看看呗，打印呀打印呀");
-        
+                
         GamePickerViewController *gamePickerViewController = segue.destinationViewController;
         gamePickerViewController.delegate = self;
         gamePickerViewController.game = _game;
